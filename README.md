@@ -44,7 +44,7 @@
 
 
 # Development environment
-   git clone https://github.com/oznzrl/cs_solidity.git --branch main
+   git clone https://github.com/oznzrl/cs_solidty.git --branch main
 
 > • contracts/: Directory for Solidity contracts
 
