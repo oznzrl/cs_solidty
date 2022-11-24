@@ -13,22 +13,22 @@
 	apt-get install git
 
 # Check Versions
-    node --version
+    node --version <br />
 
     • v16.18.1
 
-    npm --version
+    npm --version<br />
 
     • 8.19.2
 
-    git --version
+    git --version<br />
     
     • git version 2.25.1	
 
 # Install Truffle
 >   https://trufflesuite.com/docs/truffle/how-to/install/
 
-    npm install -g truffle
+    npm install -g truffle \
 
     truffle --version
 
@@ -46,20 +46,19 @@
 # Development environment
    git clone https://github.com/oznzrl/cs_solidity.git --branch main
 
-    > • contracts/: Directory for Solidity contracts
-
-    > • migrations/: Directory for scriptable deployment files
-    > • test/: Directory for test files for testing your application and contracts
-    > • truffle-config.js: Truffle configuration files
+> • contracts/: Directory for Solidity contracts
+> • migrations/: Directory for scriptable deployment files
+> • test/: Directory for test files for testing your application and contracts
+> • truffle-config.js: Truffle configuration files
 
 # Testing Environment
-    truffle develop
+    truffle develop\
 
-    truffle(develop)> compile
+    truffle(develop)> compile \
 
-    truffle(develop)> migrate
+    truffle(develop)> migrate /
 
-    truffle(develop)> test
+    truffle(develop)> test /
 
  >        Compiling your contracts...
  >       ===========================
