@@ -36,7 +36,7 @@
 >	Web3.js v1.7.4
 
 
-# Test the development environment
+# Development environment
    git clone https://github.com/oznzrl/cs_solidity.git --branch main
 
 >   • contracts/: Directory for Solidity contracts
