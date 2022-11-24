@@ -43,7 +43,7 @@ git clone https://github.com/oznzrl/cs_solidity.git --branch main
     • contracts/: Directory for Solidity contracts
     • migrations/: Directory for scriptable deployment files
     • test/: Directory for test files for testing your application and contracts
-    • truffle-config.js: Truffle configuration file
+    • truffle-config.js: Truffle configuration files
 # Testing Environment
 >   truffle develop
 truffle(develop)> compile
