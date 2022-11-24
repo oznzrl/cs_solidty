@@ -13,22 +13,22 @@
 	apt-get install git
 
 # Check Versions
-    node --version <br />
+    node --version 
 
     • v16.18.1
 
-    npm --version<br />
+    npm --version
 
     • 8.19.2
 
-    git --version<br />
+    git --version
     
     • git version 2.25.1	
 
 # Install Truffle
 >   https://trufflesuite.com/docs/truffle/how-to/install/
 
-    npm install -g truffle \
+    npm install -g truffle 
 
     truffle --version
 
@@ -52,13 +52,13 @@
 > • truffle-config.js: Truffle configuration files
 
 # Testing Environment
-    truffle develop\
+    truffle develop
 
-    truffle(develop)> compile \
+    truffle(develop)> compile 
 
-    truffle(develop)> migrate /
+    truffle(develop)> migrate 
 
-    truffle(develop)> test /
+    truffle(develop)> test 
 
  >        Compiling your contracts...
  >       ===========================
