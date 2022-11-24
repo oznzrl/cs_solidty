@@ -36,7 +36,8 @@
         }
       ],
       "stateMutability": "pure",
-      "type": "function"
+      "type": "function",
+      "constant": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"read\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_val\",\"type\":\"uint256\"}],\"name\":\"write\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/Storage.sol\":\"Storage\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/Storage.sol\":{\"keccak256\":\"0xe1412cbafa556e0dd62dddf393f1896df5063fc347300fe10c654b9594e7edf1\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://18e7460ea3af94f641a6da1c6efae5c42986e97321e713560d5d374b8d968553\",\"dweb:/ipfs/QmYKqacuixyRvNi9xpYdsyuHEHWpVVAFpXw7XaUPMqvV4g\"]}},\"version\":1}",
@@ -753,7 +754,7 @@
   "sourceMap": "66:180:0:-:0;;;87:20;;;;;;;;;;66:180;;;;;;",
   "deployedSourceMap": "66:180:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;118:69;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;189:55;;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;118:69;159:4;169;165:3;:8;;;;182:3;;175:10;;118:69;;;:::o;189:55::-;225:4;238;231:11;;189:55;:::o;88:117:1:-;197:1;194;187:12;334:77;371:7;400:5;389:16;;334:77;;;:::o;417:122::-;490:24;508:5;490:24;:::i;:::-;483:5;480:35;470:63;;529:1;526;519:12;470:63;417:122;:::o;545:139::-;591:5;629:6;616:20;607:29;;645:33;672:5;645:33;:::i;:::-;545:139;;;;:::o;690:329::-;749:6;798:2;786:9;777:7;773:23;769:32;766:119;;;804:79;;:::i;:::-;766:119;924:1;949:53;994:7;985:6;974:9;970:22;949:53;:::i;:::-;939:63;;895:117;690:329;;;;:::o;1025:118::-;1112:24;1130:5;1112:24;:::i;:::-;1107:3;1100:37;1025:118;;:::o;1149:222::-;1242:4;1280:2;1269:9;1265:18;1257:26;;1293:71;1361:1;1350:9;1346:17;1337:6;1293:71;:::i;:::-;1149:222;;;;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22 <0.9.0;\n\ncontract Storage {\n  constructor()  {\n  }\nuint val;\nfunction write(uint _val) public returns(uint){val=_val; return val;}\n\nfunction read() public pure returns(uint){return 2929;}\n}\n",
-  "sourcePath": "/home/oznzrl/Documents/hu_solidity/contracts/Storage.sol",
+  "sourcePath": "/home/oznzrl/Documents/cs_solidty/contracts/Storage.sol",
   "ast": {
     "absolutePath": "project:/contracts/Storage.sol",
     "exportedSymbols": {
@@ -1100,9 +1101,17 @@
     "name": "solc",
     "version": "0.8.17+commit.8df45f5f.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xC1c45c9E725214636aD2fcFc85E3aca50a351d5C",
+      "transactionHash": "0xe7c6a6bfc0af7b4e631f5439b2c3acb73b2bfae4d0e6d11d814240cb893cb30e"
+    }
+  },
   "schemaVersion": "3.4.11",
-  "updatedAt": "2022-11-24T11:04:50.678Z",
+  "updatedAt": "2022-11-24T11:28:15.789Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
