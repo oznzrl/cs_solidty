@@ -2,10 +2,40 @@
 pragma solidity >=0.4.22 <0.9.0;
 
 contract Storage {
-  constructor()  {
-  }
-uint val;
-function write(uint _val) public returns(uint){val=_val; return val;}
 
-function read() public pure returns(uint){return 2929;}
+uint public numValue;
+
+address owner;
+
+event OwnerChanged(string message);
+
+constructor(){
+owner=msg.sender;
+}
+
+modifier onlyOwner{
+  require(msg.sender==owner,"Modifier message:OnlyOwner");
+  _;
+}
+
+function getOwner() public view  returns(address){
+  return owner;
+}
+
+function changeOwner(address _address) public{
+  require(msg.sender==owner,"Require message:OnlyOwner");
+  owner=_address;
+  emit OwnerChanged("OwnerChanged");
+}
+
+
+function getValue()public view returns(uint){
+  return numValue;
+}
+
+function setValue(uint _numValue) public onlyOwner{
+numValue=_numValue;
+}
+
+
 }
